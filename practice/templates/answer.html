@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css') }}">
+    <title>Title</title>
+</head>
+<body>
+<p>{% if {{name[0]} %}
+    题目：{{name[0]}}
+    {% else %}
+    题目：题库没题了
+    {% end if %}
+</p>
+<p>{% for answer in {{name[1]}} %}
+<li>answer</li>
+{% end for %}
+</p>
+</body>
+</html>
